@@ -1,0 +1,109 @@
+/* General Project Page Styles */
+@media only screen and (max-width: 576px) {
+    .left-content h2 {
+        font-size: 40px; /* 标题字体进一步缩小为40像素，适配更小屏幕 */
+    }
+    .service-heading {
+        font-size: 30px; /* 服务标题字体大小调整为30像素 */
+    }
+    h2.portfolio-heading, section.portfolio-call-to-action h2 {
+        font-size: 30px; /* 作品集标题字体进一步调整 */
+        line-height: 40px; /* 行高调整为40像素 */
+    }
+    .section-padding {
+        padding: 20px; /* 缩小通用内边距，适应小屏空间 */
+    }
+    button.project-button-1, button.project-button-2 {
+        margin-bottom: 15px; /* 统一按钮底部间距 */
+    }
+    .testimonial-description h3 {
+        font-size: 30px; /* 用户评价标题字体调整为30像素 */
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .coma {
+        left: 5%; /* 调整位置到稍微靠左 */
+    }
+    a.carousel-control-prev.testimonial-control {
+        top: 80%; /* 下调控制按钮位置，更贴近轮播区 */
+    }
+    a.carousel-control-next.testimonial-control {
+        top: 80%;
+        margin-left: 15px; /* 减少外边距，防止布局错乱 */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .client-picture img {
+        max-height: 300px; /* 限制图片高度为300像素，避免过大 */
+    }
+    .client-picture img.coma {
+        top: 50%; /* 调整图片垂直位置 */
+        left: 10%; /* 调整图片水平位置 */
+    }
+}
+
+/* Team Page Styles */
+@media only screen and (max-width: 992px) {
+    .achivement-item {
+        margin-top: 40px; /* 为成就区块增加顶部间距 */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-container .row {
+        margin-bottom: 35px; /* 减少博客区块的行间距 */
+    }
+}
+
+/* Contact Us Page */
+@media only screen and (max-width: 768px) {
+    .office-block {
+        margin-bottom: 30px; /* 减少底部间距 */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .partner img {
+        margin-bottom: 20px; /* 减少合作伙伴图片的底部间距 */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .partner img {
+        margin-bottom: 30px; /* 为小屏幕优化图片间距 */
+    }
+}
+
+/* Service Details Page */
+@media only screen and (max-width: 768px) {
+    .contact-header .right-content img {
+        width: 80% !important; /* 调整图片宽度至80%，更适合小屏 */
+        margin: 0 auto; /* 图片居中对齐 */
+    }
+}
+/* 控制图片大小 */
+.client-img {
+    max-width: 100%; /* 图片不会超过容器宽度 */
+    height: auto; /* 保持图片比例 */
+    object-fit: cover; /* 确保图片填充时不变形 */
+    border-radius: 8px; /* 可选，添加圆角 */
+}
+
+/* Coma 图标的样式 */
+.coma-img {
+    width: 40px; /* 设置固定宽度 */
+    height: 40px; /* 设置固定高度 */
+    position: absolute; /* 绝对定位，可以根据需求调整 */
+    top: 10px; /* 距离顶部位置 */
+    right: 10px; /* 距离右侧位置 */
+}
+
+/* 客户图片外层容器样式 */
+.client-picture {
+    position: relative; /* 相对定位，确保 .coma-img 定位有效 */
+    overflow: hidden; /* 避免图片溢出 */
+    max-width: 300px; /* 容器最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+}

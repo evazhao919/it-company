@@ -1,0 +1,189 @@
+/* Header Banner Area Styles */
+.container.header-content {
+    height: 100%; /* 容器高度占满父元素 */
+}
+
+.highlight {
+    color: #1E88E5; /* 突出的文字颜色为亮蓝色 */
+}
+
+.left-content h2 {
+    font-family: 'Roboto', sans-serif; /* 标题字体为Roboto */
+    font-size: 60px; /* 字体大小为60像素 */
+    font-weight: 500; /* 字体粗细为500 */
+    color: #0D1F56; /* 字体颜色为深蓝色 */
+    line-height: 1.2; /* 行高优化为1.2 */
+}
+
+.centralize {
+    display: flex; /* 使用弹性盒模型 */
+    align-items: center; /* 子元素垂直居中 */
+}
+
+.left-content p {
+    font-family: 'Roboto', sans-serif; /* 段落字体为Roboto */
+    font-size: 18px; /* 字体大小为18像素 */
+    font-weight: 400; /* 字体粗细为正常 */
+    color: #58647E; /* 字体颜色调整为柔和的灰蓝色 */
+    line-height: 1.6; /* 增加行高，提高可读性 */
+}
+
+.call-to-action button {
+    background: #1E88E5; /* 按钮背景为亮蓝色 */
+    border: none; /* 移除按钮边框 */
+    font-family: 'Roboto', sans-serif; /* 按钮字体为Roboto */
+    font-size: 18px; /* 字体大小为18像素 */
+    font-weight: 500; /* 字体粗细为500 */
+    padding: 10px 20px; /* 按钮的内边距优化 */
+    color: #FFFFFF; /* 按钮文字颜色为白色 */
+    border-radius: 6px; /* 圆角边框为6像素 */
+    cursor: pointer; /* 鼠标悬停时显示手型指针 */
+    transition: all 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+.call-to-action button:hover {
+    background: #0D1F56; /* 鼠标悬停时背景变为深蓝色 */
+    transform: scale(1.05); /* 鼠标悬停时放大5% */
+}
+
+.call-to-action a {
+    font-family: 'Roboto', sans-serif; /* 链接字体为Roboto */
+    font-size: 18px; /* 字体大小为18像素 */
+    font-weight: 500; /* 字体粗细为500 */
+    color: #1E88E5; /* 链接颜色为亮蓝色 */
+    text-decoration: underline; /* 添加下划线装饰 */
+    margin-left: 20px; /* 左侧外边距为20像素 */
+}
+
+.right-content img {
+    width: 100%; /* 图片宽度填充父容器 */
+    max-height: 400px; /* 图片最大高度限制为400像素 */
+    padding-left: 20px; /* 左侧内边距为20像素 */
+}
+
+/* Services styles */
+.services {
+    background: linear-gradient(30deg, #F7F9FC, #FFFFFF); /* 背景颜色为柔和的浅灰渐变 */
+    padding: 50px 0; /* 上下内边距设置为50像素 */
+}
+
+.service-heading {
+    font-family: 'Roboto', sans-serif; /* 标题字体为Roboto */
+    font-size: 45px; /* 字体大小为45像素 */
+    font-weight: 500; /* 字体粗细为500 */
+    color: #0D1F56; /* 字体颜色为深蓝色 */
+    text-align: center; /* 标题居中对齐 */
+    margin-bottom: 30px; /* 标题底部间距 */
+}
+
+.card-body {
+    background-color: #EAF4FD; /* 卡片背景颜色为浅蓝色 */
+    border: 1px solid #DDE7F0; /* 添加柔和的边框 */
+    padding: 20px; /* 卡片内容内边距 */
+    border-radius: 8px; /* 圆角边框为8像素 */
+    transition: all 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+.card-body:hover {
+    background-color: #DDE7F0; /* 鼠标悬停时背景颜色加深 */
+    transform: translateY(-5px); /* 鼠标悬停时卡片向上移动5像素 */
+}
+
+a.card-body {
+    text-decoration: none; /* 移除链接下划线 */
+    color: inherit; /* 链接颜色继承父元素 */
+}
+
+/* why choose section */
+.service-type-gap {
+    padding-bottom: 5rem; /* 优化底部内边距为5rem */
+}
+
+h2.col-md-6 {
+    padding-bottom: 2rem; /* 标题底部内边距 */
+    padding-top: 1rem; /* 标题顶部内边距 */
+    font-size: 36px; /* 调整标题字体大小 */
+    color: #0D1F56; /* 字体颜色为深蓝色 */
+    text-align: left; /* 标题左对齐 */
+}
+
+
+
+
+/* Footer Styles */
+/* Footer Styles */
+.footer {
+     background: linear-gradient(30deg, #0D1F56, #1E3A8A);
+       padding: 20px 0;
+}
+
+.footer-widget-1 p {
+    font-family: 'Roboto', sans-serif; /* 设置段落字体为Roboto */
+    font-size: 16px; /* 字体大小调整为16像素 */
+    line-height: 28px; /* 行高为28像素，提升段落可读性 */
+    margin-top: 15px; /* 顶部外边距为15像素 */
+    color: #A9C6E3;
+    text-align: center; /* 文本内容居中对齐 */
+}
+
+.footer-widget-2 h3, .footer-widget-3 h3 {
+    font-family: 'Roboto', sans-serif; /* 设置标题字体为Roboto */
+    font-size: 24px; /* 字体大小调整为24像素 */
+    font-weight: 500; /* 字体粗细为500 */
+    line-height: 30px; /* 行高为30像素 */
+    color: #A9C6E3;
+    margin-bottom: 15px; /* 设置标题底部间距为15像素 */
+}
+
+.footer-widget-2 ul li, .footer-widget-3 ul li {
+    list-style: none; /* 移除列表默认的项目符号 */
+    padding: 5px 0; /* 列表项上下内边距为5像素 */
+}
+
+.footer-widget-2 ul li a, .footer-widget-3 ul li a {
+    font-family: 'Roboto', sans-serif; /* 设置链接字体为Roboto */
+    font-size: 16px; /* 字体大小调整为16像素 */
+    line-height: 28px; /* 行高为28像素 */
+    color: #A9C6E3;
+    text-decoration: none; /* 移除链接默认下划线 */
+    transition: color 0.3s ease; /* 添加平滑的颜色过渡效果 */
+}
+
+.footer-widget-2 ul li a:hover, .footer-widget-3 ul li a:hover {
+      color: #58A6FF; /* 浅蓝 */
+}
+
+.footer-widget-4 p {
+    font-family: 'Roboto', sans-serif; /* 设置段落字体为Roboto */
+    font-size: 16px; /* 字体大小调整为16像素 */
+    font-weight: 400; /* 字体粗细为400 */
+    line-height: 28px; /* 行高为28像素 */
+    margin-top: 20px; /* 顶部外边距为20像素 */
+    margin-bottom: 15px; /* 底部外边距为15像素 */
+    color: #58647E; /* 设置文字颜色为灰蓝色 */
+}
+
+.footer-widget-4 ul li {
+    list-style: none; /* 移除列表项的项目符号 */
+    display: inline-block; /* 列表项横向排列 */
+    margin: 0 10px; /* 列表项左右间距为10像素 */
+}
+
+.footer-widget-4 ul li a {
+    font-size: 20px; /* 设置字体大小为20像素 */
+    color: #AAB3C1; /* 链接默认颜色为浅灰蓝色 */
+    text-decoration: none; /* 移除链接下划线 */
+    transition: color 0.3s ease; /* 添加颜色渐变动画 */
+}
+
+.footer-widget-4 ul li a:hover {
+    color: #58A6FF; /* 浅蓝 */
+}
+
+.footer-widget-4 ul li a:focus {
+    color: #58A6FF; /* 浅蓝 */
+}
+
+.footer-widget-4 ul li a:active {
+    color: #0D1F56; /* 点击时链接颜色变为深蓝色 */
+}

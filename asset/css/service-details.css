@@ -1,0 +1,533 @@
+* {
+    margin: 0; /* 重置所有HTML元素的外边距，清除默认样式的影响 */
+    padding: 0; /* 重置所有HTML元素的内边距，确保布局的统一 */
+}
+
+html, body {
+    height: 100%; /* 将HTML和BODY的高度设置为视口的100%，便于全屏布局 */
+    font-family: 'Roboto', sans-serif; /* 设置全局默认字体为Roboto，提供简洁现代的视觉效果 */
+    scroll-behavior: smooth; /* 设置页面滚动为平滑效果（适用于锚点跳转） */
+}
+
+a:hover {
+    text-decoration: none; /* 鼠标悬停时移除超链接的默认下划线 */
+}
+
+.section-padding {
+    padding: 70px; /* 为包含 `section-padding` 类的元素设置上下70像素的内边距 */
+}
+
+/* 添加字体 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+.header {
+    background: linear-gradient(-40deg, #E3E8EF, #FFFFFF); /* 设置背景为从浅蓝灰到白色的线性渐变，角度为-40度 */
+    height: auto; /* 高度根据内容自动调整 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 添加柔和的阴影效果 */
+}
+
+/* Header Navigation Styles */
+.header-nav {
+    background-color: transparent; /* 如果背景不需要填充整个区域 */
+    height: auto; /* 自适应高度 */
+    padding: 10px 20px; /* 减少多余的内边距 */
+}
+
+
+/* 导航栏 Logo */
+.navbar-brand img {
+    width: auto; /* 自动调整宽度 */
+    height: 50px; /* 固定高度 */
+}
+
+.main-menu ul {
+    display: flex; /* 使用弹性布局 */
+    list-style: none; /* 移除列表默认样式 */
+    gap: 20px; /* 列表项之间的水平间距 */
+}
+
+
+/* 导航栏中的链接样式 */
+.main-menu ul li {
+    margin-left: 20px; /* 列表项之间的水平间距 */
+}
+
+.main-menu ul li a {
+    font-family: 'Poppins', sans-serif; /* 使用现代感字体 */
+    color: #00A676; /* 协调的绿色，替代黄色 */
+    font-size: 18px; /* 字体大小优化为18像素，增强可读性 */
+    font-weight: 500; /* 字体粗细设置为中等粗体 */
+    text-transform: uppercase; /* 全部大写，增加科技感 */
+    transition: color 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬停时链接样式 */
+.main-menu ul li a:hover {
+    color: #00CC88; /* 悬停时的绿色更加明亮，突出交互 */
+    text-decoration: underline; /* 添加下划线装饰 */
+}
+
+.main-menu ul li:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大列表项1.05倍 */
+    transition: transform 0.3s ease; /* 平滑的放大动画 */
+}
+
+/* 按钮样式 */
+button.nav-button {
+    background-color: #00A676; /* 协调的绿色背景 */
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF; /* 按钮文字颜色为白色 */
+    font-size: 16px; /* 按钮字体大小 */
+    padding: 8px 15px; /* 调整按钮内边距 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 圆角设置 */
+    cursor: pointer; /* 鼠标悬停显示手型 */
+    transition: background-color 0.3s ease; /* 背景颜色平滑过渡 */
+}
+
+button.nav-button:hover {
+    background-color: #00CC88; /* 鼠标悬停时绿色变亮 */
+}
+
+
+
+/* Header Banner Area Styles */
+/* Header Banner Area Styles */
+.container.header-content {
+    height: 100%; /* 设置容器高度占父元素的100%，确保全屏显示 */
+}
+
+.highlight {
+    color: #1E88E5; /* 设置字体颜色为亮蓝色，突出显示 */
+}
+
+.left-content h2 {
+    font-family: 'Roboto', sans-serif; /* 设置标题字体为Roboto */
+    font-size: 60px; /* 设置字体大小为60像素 */
+    font-weight: 500; /* 设置字体粗细为500（中等粗体） */
+    color: #070A57; /* 设置字体颜色为深蓝色 */
+}
+
+.centralize {
+    display: flex; /* 使用Flex布局 */
+    align-items: center; /* 子元素在垂直方向上居中对齐 */
+}
+
+.left-content p {
+    font-family: 'Roboto', sans-serif; /* 使用Roboto字体 */
+    font-size: 16px; /* 字体大小设置为16像素 */
+    font-weight: 400; /* 字体粗细设置为正常 */
+    color: #64707D; /* 字体颜色设置为灰蓝色 */
+    line-height: 1.8; /* 行高增加，增强可读性 */
+}
+
+.call-to-action button {
+    background: #FFBA00; /* 背景颜色设置为亮黄色 */
+    border: none; /* 移除边框 */
+    font-family: 'Roboto', sans-serif; /* 按钮字体为Roboto */
+    font-size: 18px; /* 字体大小设置为18像素 */
+    font-weight: 500; /* 字体粗细设置为500 */
+    padding: 10px 20px; /* 增加按钮的内边距，提升触控体验 */
+    color: #070A57; /* 按钮文字颜色为深蓝色 */
+    border-radius: 5px; /* 圆角边框增加视觉柔和感 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    transition: all 0.3s ease; /* 添加平滑的过渡动画 */
+}
+
+.call-to-action button:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大按钮1.1倍 */
+    background: #FFC107; /* 鼠标悬停时背景颜色变为浅黄色 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 添加柔和阴影效果 */
+}
+
+.call-to-action a {
+    font-family: 'Roboto', sans-serif; /* 链接字体为Roboto */
+    font-size: 18px; /* 字体大小为18像素 */
+    font-weight: 500; /* 字体粗细设置为500 */
+    color: #1E88E5; /* 链接颜色设置为亮蓝色 */
+    text-decoration: underline; /* 添加下划线 */
+    margin-left: 30px; /* 设置左侧外边距为30像素 */
+    transition: color 0.3s ease; /* 添加平滑的颜色变化动画 */
+}
+
+.call-to-action a:hover {
+    color: #FFBA00; /* 鼠标悬停时链接颜色变为亮黄色 */
+}
+
+.right-content img {
+    width: 70%; /* 图片宽度为父容器的70% */
+    padding-left: 30px; /* 图片左侧内边距为30像素 */
+    border-radius: 8px; /* 添加圆角，使图片更柔和 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 为图片添加轻微阴影 */
+}
+
+/* Best Solutions for Your Business Start */
+.sample-image-service {
+    width: 45rem; /* 图片宽度设置为45rem */
+    border-radius: 10px; /* 设置图片边框圆角为10px */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    transition: transform 0.3s ease; /* 平滑放大效果 */
+}
+
+.sample-image-service:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大图片5% */
+}
+
+.get-quote {
+    text-align: center; /* 内容水平居中对齐 */
+    padding-bottom: 2rem; /* 底部内边距设置为2rem */
+}
+
+.get-quote-button {
+    margin-top: 1rem; /* 按钮顶部外边距设置为1rem */
+    padding: 10px 20px; /* 增加按钮的触控区域 */
+    background: #1E88E5; /* 按钮背景颜色设置为亮蓝色 */
+    color: #FFFFFF; /* 按钮文字颜色为白色 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 按钮边框圆角为5px */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    transition: all 0.3s ease; /* 平滑动画效果 */
+}
+
+.get-quote-button:hover {
+    background: #0056B3; /* 鼠标悬停时背景颜色变为深蓝色 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+
+.form-control {
+    padding: 15px; /* 输入框内边距调整为15px */
+    border: 1px solid #DDD; /* 设置浅灰色边框 */
+    border-radius: 5px; /* 添加圆角 */
+    font-size: 16px; /* 调整字体大小 */
+}
+
+.feature li {
+    padding-left: 2rem; /* 列表项左侧内边距设置为2rem */
+    background-image: url(../image/check.svg); /* 使用check.svg作为背景图标 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+    background-position: left center; /* 图标位置为列表项的左侧中间 */
+    line-height: 1.8; /* 行高设置为1.8，增强可读性 */
+    margin-bottom: 1rem; /* 列表项底部外边距设置为1rem */
+    list-style-type: none; /* 移除默认的列表项符号 */
+    font-weight: 500; /* 字体加粗，增强视觉效果 */
+    color: #070A57; /* 字体颜色为深蓝色 */
+}
+
+.feature {
+    font-size: 16px; /* 列表字体大小设置为16px */
+}
+
+
+/* Work process syles */ 
+/* Header Banner Area Styles */
+.container.header-content {
+    height: 100%; /* 设置容器高度占父元素的100%，确保全屏显示 */
+}
+
+.highlight {
+    color: #1E88E5; /* 设置字体颜色为亮蓝色，突出显示 */
+}
+
+.left-content h2 {
+    font-family: 'Roboto', sans-serif; /* 设置标题字体为Roboto */
+    font-size: 60px; /* 设置字体大小为60像素 */
+    font-weight: 500; /* 设置字体粗细为500（中等粗体） */
+    color: #070A57; /* 设置字体颜色为深蓝色 */
+}
+
+.centralize {
+    display: flex; /* 使用Flex布局 */
+    align-items: center; /* 子元素在垂直方向上居中对齐 */
+}
+
+.left-content p {
+    font-family: 'Roboto', sans-serif; /* 使用Roboto字体 */
+    font-size: 16px; /* 字体大小设置为16像素 */
+    font-weight: 400; /* 字体粗细设置为正常 */
+    color: #64707D; /* 字体颜色设置为灰蓝色 */
+    line-height: 1.8; /* 行高增加，增强可读性 */
+}
+
+.call-to-action button {
+    background: #FFBA00; /* 背景颜色设置为亮黄色 */
+    border: none; /* 移除边框 */
+    font-family: 'Roboto', sans-serif; /* 按钮字体为Roboto */
+    font-size: 18px; /* 字体大小设置为18像素 */
+    font-weight: 500; /* 字体粗细设置为500 */
+    padding: 10px 20px; /* 增加按钮的内边距，提升触控体验 */
+    color: #070A57; /* 按钮文字颜色为深蓝色 */
+    border-radius: 5px; /* 圆角边框增加视觉柔和感 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    transition: all 0.3s ease; /* 添加平滑的过渡动画 */
+}
+
+.call-to-action button:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大按钮1.1倍 */
+    background: #FFC107; /* 鼠标悬停时背景颜色变为浅黄色 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 添加柔和阴影效果 */
+}
+
+.call-to-action a {
+    font-family: 'Roboto', sans-serif; /* 链接字体为Roboto */
+    font-size: 18px; /* 字体大小为18像素 */
+    font-weight: 500; /* 字体粗细设置为500 */
+    color: #1E88E5; /* 链接颜色设置为亮蓝色 */
+    text-decoration: underline; /* 添加下划线 */
+    margin-left: 30px; /* 设置左侧外边距为30像素 */
+    transition: color 0.3s ease; /* 添加平滑的颜色变化动画 */
+}
+
+.call-to-action a:hover {
+    color: #FFBA00; /* 鼠标悬停时链接颜色变为亮黄色 */
+}
+
+.right-content img {
+    width: 70%; /* 图片宽度为父容器的70% */
+    padding-left: 30px; /* 图片左侧内边距为30像素 */
+    border-radius: 8px; /* 添加圆角，使图片更柔和 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 为图片添加轻微阴影 */
+}
+
+/* Best Solutions for Your Business Start */
+.sample-image-service {
+    width: 45rem; /* 图片宽度设置为45rem */
+    border-radius: 10px; /* 设置图片边框圆角为10px */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    transition: transform 0.3s ease; /* 平滑放大效果 */
+}
+
+.sample-image-service:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大图片5% */
+}
+
+.get-quote {
+    text-align: center; /* 内容水平居中对齐 */
+    padding-bottom: 2rem; /* 底部内边距设置为2rem */
+}
+
+.get-quote-button {
+    margin-top: 1rem; /* 按钮顶部外边距设置为1rem */
+    padding: 10px 20px; /* 增加按钮的触控区域 */
+    background: #1E88E5; /* 按钮背景颜色设置为亮蓝色 */
+    color: #FFFFFF; /* 按钮文字颜色为白色 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 按钮边框圆角为5px */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    transition: all 0.3s ease; /* 平滑动画效果 */
+}
+
+.get-quote-button:hover {
+    background: #0056B3; /* 鼠标悬停时背景颜色变为深蓝色 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+
+.form-control {
+    padding: 15px; /* 输入框内边距调整为15px */
+    border: 1px solid #DDD; /* 设置浅灰色边框 */
+    border-radius: 5px; /* 添加圆角 */
+    font-size: 16px; /* 调整字体大小 */
+}
+
+.feature li {
+    padding-left: 2rem; /* 列表项左侧内边距设置为2rem */
+    background-image: url(../image/check.svg); /* 使用check.svg作为背景图标 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+    background-position: left center; /* 图标位置为列表项的左侧中间 */
+    line-height: 1.8; /* 行高设置为1.8，增强可读性 */
+    margin-bottom: 1rem; /* 列表项底部外边距设置为1rem */
+    list-style-type: none; /* 移除默认的列表项符号 */
+    font-weight: 500; /* 字体加粗，增强视觉效果 */
+    color: #070A57; /* 字体颜色为深蓝色 */
+}
+
+.feature {
+    font-size: 16px; /* 列表字体大小设置为16px */
+}
+
+/* Work Process Styles */
+.process-block {
+    text-align: center; /* 文本居中对齐 */
+    padding: 20px; /* 增加内边距为20像素，提供更宽松的布局 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加平滑的缩放和阴影动画 */
+}
+
+.process-block:hover {
+    transform: scale(1.05); /* 鼠标悬停时整体放大1.05倍 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* 添加轻微阴影 */
+}
+
+.process-block img {
+    background: #FFF9E5; /* 设置更柔和的浅黄色背景 */
+    border: 2px dashed #FFBA00; /* 修改为更轻便的黄色虚线边框 */
+    padding: 20px; /* 内边距设置为20像素 */
+    border-radius: 10px; /* 图片边框圆角增加为10像素 */
+    margin-bottom: 20px; /* 增加图片底部外边距 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 增加悬停动画 */
+}
+
+.process-block img:hover {
+    transform: scale(1.1); /* 鼠标悬停时图片放大1.1倍 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* 为图片添加轻微阴影效果 */
+}
+
+.process-block h3 {
+    font-family: 'Roboto', sans-serif; /* 设置标题字体为Roboto */
+    font-size: 28px; /* 增加字体大小为28像素，突出标题 */
+    font-weight: 600; /* 字体粗细设置为600 */
+    color: #070A57; /* 使用深蓝色，提升标题层次感 */
+    margin-bottom: 10px; /* 添加标题与段落之间的间距 */
+}
+
+.process-block p {
+    font-family: 'Roboto', sans-serif; /* 使用Roboto字体 */
+    font-size: 16px; /* 设置字体大小为16像素 */
+    line-height: 1.8; /* 增加行高，提升可读性 */
+    color: #64707D; /* 字体颜色为灰蓝色 */
+}
+
+/* Project Discussion */
+.project-discussion {
+    margin-left: 30px; /* 左侧外边距为30像素 */
+}
+
+.project-discussion h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px; /* 调整标题字体大小为40像素 */
+    font-weight: 600; /* 设置字体为粗体 */
+    color: #070A57; /* 深蓝色标题 */
+    margin-bottom: 20px; /* 增加标题与内容之间的间距 */
+}
+
+.project-discussion p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; /* 段落字体大小设置为18像素 */
+    line-height: 1.8; /* 行高增加，提升段落阅读体验 */
+    color: #64707D; /* 灰蓝色字体颜色 */
+    margin-bottom: 20px; /* 段落底部间距 */
+}
+
+.project-discussion button {
+    background: #1E88E5; /* 设置按钮背景颜色为亮蓝色 */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* 字体大小设置为16像素 */
+    padding: 10px 20px; /* 按钮内边距调整为更适合触控的大小 */
+    border: none; /* 移除边框 */
+    border-radius: 8px; /* 增加按钮圆角，使其更柔和 */
+    color: #FFFFFF; /* 按钮文字颜色为白色 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* 添加平滑的过渡动画 */
+}
+
+.project-discussion button:hover {
+    background: #0056B3; /* 鼠标悬停时背景颜色变为深蓝色 */
+    transform: scale(1.05); /* 放大按钮 */
+}
+
+/* Featured Designs */
+.square {
+    position: relative;
+    width: 300px; /* 宽度为300像素 */
+    height: 300px; /* 高度为300像素 */
+    overflow: hidden; /* 超出部分隐藏 */
+    border-radius: 12px; /* 添加圆角，使设计更柔和 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加平滑的悬停动画 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加轻微阴影效果 */
+}
+
+.square:hover {
+    transform: scale(1.05); /* 鼠标悬停时整体放大 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* 悬停时增加阴影深度 */
+}
+
+.square-img {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 图片居中对齐 */
+    border-radius: 10%; /* 圆角调整为10% */
+}
+
+
+
+        
+       /* Footer Styles */
+/* Footer Styles */
+.footer {
+    background: linear-gradient(30deg, #0D1F56, #1E3A8A);
+      padding: 20px 0;
+}
+
+.footer-widget-1 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 20px;
+    text-align: center;
+    color: #64707D; /* 设置段落文字颜色为灰蓝色 */
+}
+
+.footer-widget-2 h3, .footer-widget-3 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 600; /* 增加标题的粗细，增强视觉吸引力 */
+    line-height: 35px;
+    color: #070A57; /* 标题颜色设置为深蓝色 */
+    margin-bottom: 20px; /* 增加底部间距 */
+}
+
+.footer-widget-2 ul li, .footer-widget-3 ul li {
+    list-style: none;
+    padding: 8px 0; /* 增加上下间距，使列表更易于阅读 */
+}
+
+.footer-widget-2 ul li a, .footer-widget-3 ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #64707D;
+    text-decoration: none; /* 移除链接默认下划线 */
+    transition: color 0.3s ease; /* 添加颜色过渡效果 */
+}
+
+.footer-widget-2 ul li a:hover, .footer-widget-3 ul li a:hover {
+    color: #FFBA00; /* 鼠标悬停时链接颜色变为亮黄色 */
+}
+
+.footer-widget-4 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #64707D; /* 文本颜色设置为灰蓝色 */
+}
+
+.footer-widget-4 ul li {
+    list-style-type: none;
+    display: inline-block; /* 使用块状显示，使图标更易于排列 */
+    margin: 0 10px; /* 设置左右外边距，增加图标间距 */
+}
+
+.footer-widget-4 ul li a {
+    color: #DDDDDD; /* 默认图标颜色设置为浅灰色 */
+    font-size: 25px; /* 调整图标大小为25像素 */
+    transition: color 0.3s ease; /* 添加平滑的颜色过渡动画 */
+}
+
+.footer-widget-4 ul li a:hover {
+    color: #FFBA00; /* 鼠标悬停时图标颜色变为亮黄色 */
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #64707D; /* 设置版权文字颜色为灰蓝色 */
+    border-top: 1px solid #DDD; /* 添加顶部边框，分隔版权信息 */
+    padding-top: 15px; /* 添加顶部内边距 */
+}
