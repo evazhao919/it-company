@@ -1,12 +1,31 @@
-# HDWorkshop-responsive
-HDWorkshop is a agency website. It's fully responsive. 
-# Technology used : 
-1. HTML 5
-2. CSS 3
-3. Javascript (vanilla)
-4. Jquery
-5. Bootstrap
-6. MixItUp plugin
- 
- ## live link : 
-https://IT company.github.io/HDWorkshop-responsive/
+# Restaurant IT Solutions
+
+We provide IT services and POS system solutions for restaurants and small businesses.
+
+## Our Services
+
+### POS Systems
+- Restaurant POS setup
+- Payment terminals
+- Credit card machines
+
+### IT Services
+- Network & WiFi setup
+- Security cameras installation
+- System maintenance
+
+### Equipment Sales
+- Bubble tea machines
+- Kitchen equipment
+- POS hardware
+
+### Installation & Support
+- On-site installation
+- Technical support
+
+## Location
+Nashville, Tennessee
+
+## Contact
+Email: 
+Phone: 
